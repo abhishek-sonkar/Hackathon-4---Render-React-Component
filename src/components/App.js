@@ -1,11 +1,12 @@
 import React, {Component, useState} from "react";
+import ReactDOM from 'react-dom';
 import '../styles/App.css';
 
 const App = () => {
   return (
-    <p>I am learning React. My life is getting better.</p>
+    document.createElement('p').innerText = "I am learning React. My life is getting better."
   );
 }
-ReactDOM.render(App, document.getElementById("root"));
+ReactDOM.render(App(), document.getElementById("root"));
 
 export default App;
